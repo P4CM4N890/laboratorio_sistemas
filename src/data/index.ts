@@ -5,3 +5,4 @@ export { SocialMedias } from './SocialMedias';
 export { CarouselImages } from './CarouselImages';
 export { CVCarlos } from './CVCarlos';
 export { CongressArticlesData } from './CongressArticlesData';
+export { PeopleData } from './PeopleData';

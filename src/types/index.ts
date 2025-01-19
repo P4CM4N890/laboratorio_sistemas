@@ -7,3 +7,4 @@ export * from './CarouselImage.types';
 export * from './Links.types';
 export * from './CV.types';
 export * from './CongressArticle.types';
+export * from './People.types';

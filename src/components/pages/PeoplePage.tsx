@@ -1,7 +1,9 @@
 import { PeoplePageTemplate } from '../templates';
 
+import { PeopleData } from '../../data';
+
 export const PeoplePage = () => {
   return (
-    <PeoplePageTemplate />
+    <PeoplePageTemplate peopleList={ PeopleData } />
   )
 }

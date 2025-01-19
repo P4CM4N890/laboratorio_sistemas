@@ -1,5 +1,5 @@
 import { PeopleList } from '../types';
-import carlos  from '../utils/images/carlos_franco.png';
+import carlos  from '../../public/images/carlos_franco.png';
 
 export const PeopleData: PeopleList[] = [
     {

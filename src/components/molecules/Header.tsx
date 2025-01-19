@@ -1,4 +1,4 @@
-import logo from '../../utils/images/udg.webp';
+import logo from '../../../public/images/udg.webp';
 
 export const Header = () => {
   return (

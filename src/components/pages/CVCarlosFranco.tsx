@@ -1,9 +1,11 @@
-import { CVCarlos } from "../../data";
-import { CVPageTemplate } from "../templates";
+import { CVCarlos } from '../../data';
+import { CVPageTemplate } from '../templates';
 
 export const CVCarlosFranco = () => {
 
+    const cvCarlos = CVCarlos();
+
     return (
-        <CVPageTemplate  data={ CVCarlos } />
+        <CVPageTemplate  data={ cvCarlos } />
     );
 };

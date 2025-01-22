@@ -1,6 +1,6 @@
 export interface People {
-    name: string;
-    department?: string;
+    name: any;
+    department?: any;
     email?: string;
     img?: string;
     url?: string;

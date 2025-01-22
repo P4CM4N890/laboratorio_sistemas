@@ -16,14 +16,14 @@ export const CVSections = ( { data } : Props ) => {
             <section className='flex flex-wrap p-2 py-5' >
                 {
                     sections.map( section => (
-                        <BtnSection section={ section.title } />
+                        <BtnSection key={ section.title } section={ section.title } />
                     ))
                 }
             </section>
 
             {
                 sections.map( section => (
-                    <InfoSection title={ section.title } list={ section.list } />
+                    <InfoSection key={ section.title } title={ section.title } list={ section.list } />
                 ))
             }
 

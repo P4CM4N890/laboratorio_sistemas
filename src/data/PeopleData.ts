@@ -1,13 +1,18 @@
 import { PeopleList } from '../types';
 import carlos  from '../utils/images/carlos_franco.png';
+import { useTranslation } from 'react-i18next';
 
-export const PeopleData: PeopleList[] = [
+export const PeopleData = (): PeopleList[] => {
+    
+    const { t } = useTranslation();
+    
+    return [
     {
-        title: 'Staff',
+        title: t('staff'),
         people: [
             {
                 name: 'Carlos Alberto López Franco',
-                department: 'Departamento de Ciencias Computacionales',
+                department: t('departments.computer_science'),
                 email: 'carlos.lopez@cucei.udg.mx',
                 page: '/carlos_franco',
                 img: carlos,
@@ -15,14 +20,14 @@ export const PeopleData: PeopleList[] = [
         ]
     },
     {
-        title: 'Estudiantes Graduados Miembros del SNI',
+        title: t('graduates.sniMembers'),
         people: [
             { name: 'Javier Enrique Gómez Ávila'},
             { name: 'José de Jesús Hernández Barragán' }
         ]
     },
     {
-        title: 'Estudiantes Graduados (Doctorado)',
+        title: t('graduates.doctorate'),
         people: [
             { name: 'Alberto Alejandro Gallegos Muro' },
             { name: 'Javier Enrique Gómez Ávila' },
@@ -31,7 +36,7 @@ export const PeopleData: PeopleList[] = [
         ]
     },
     {
-        title: 'Estudiantes Graduados (Maestría)',
+        title: t('graduates.master'),
         people: [
             { name: 'Geoffrey Kyle Fink' },
             { name: 'Gehová Lopez González' },
@@ -49,7 +54,7 @@ export const PeopleData: PeopleList[] = [
         ]
     },
     {
-        title: 'Estudiantes Graduados (Licenciatura)',
+        title: t('graduates.licentiate'),
         people: [
             { name: 'Michel Emanuel López Franco' },
             { name: 'Alan Milke Marquez' },
@@ -58,3 +63,4 @@ export const PeopleData: PeopleList[] = [
         ]
     }
 ]
+}

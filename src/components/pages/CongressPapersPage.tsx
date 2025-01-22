@@ -1,7 +1,7 @@
 import { CongressPageTemplate } from '../templates';
 import { CongressArticlesData } from '../../data';
 
-export const CongressArticlePage = () => {
+export const CongressPaperPage = () => {
 
     return (
         <CongressPageTemplate records={ CongressArticlesData } />

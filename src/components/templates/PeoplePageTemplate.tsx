@@ -37,19 +37,6 @@ export const PeoplePageTemplate = ( { peopleList } : Props ) => {
                             </section>
                         ))
                     }
-                    {/* {
-                        people.map( ({ name, department, email, img, url, page }) => (
-                            <CardPeople 
-                                name={ name } 
-                                department={ department } 
-                                email={ email }
-                                img={ img }
-                                url={ url }
-                                page={ page }
-                                key={ name } 
-                            />
-                        ) )
-                    } */}
                 </section>
             </div>
         </PageTemplate>

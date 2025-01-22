@@ -1,40 +1,39 @@
 import { PageTemplate } from './PageTemplate';
-import { Record } from '../../types';
-import { SectionMiniRecords } from '../organisms';
 
 import { Carousel } from '../molecules/Carousel';
+import { useTranslation } from 'react-i18next';
 
 interface Props {
-    records: Record[],
+    // records: Record[],
     children?: any,
 }
 
 
-export const HomePageTemplate = ( { records, children } : Props ) => {
-  return (
-    <PageTemplate>
-        <div className='flex flex-col w-full p-5 min-w-min' >
-            <section className='pb-5' >
+export const HomePageTemplate = ( { children } : Props ) => {
+
+    const { t } = useTranslation();
     
-                <h2 className='text-sky-700 font-semibold text-2xl pb-2' >Intelligent Systems Laboratory</h2>
+    return (
+        <PageTemplate>
+            <div className='flex flex-col w-full p-5 min-w-min h-screen' >
+                <section className='pb-5' >
+        
+                    <h2 className='text-sky-700 font-semibold text-2xl pb-2' >{ t('title') }</h2>
 
 
-                <section>
+                    <section>
 
-                    <Carousel />
+                        <Carousel />
 
-                    { children }
+                        { children }
 
-    
+        
+                    </section>
+
+
                 </section>
-
-            </section>
-            <section className='grid grid-cols-1 w-max gap-10' >
-
-                <SectionMiniRecords data={ records } />
-
-            </section>
-        </div>
-    </PageTemplate>
-  )
+                <hr />
+            </div>
+        </PageTemplate>
+    )
 }

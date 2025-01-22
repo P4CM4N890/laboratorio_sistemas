@@ -16,6 +16,12 @@ export const Records: Record[] = [
         articleNumber: '4945',
         authorIdentifiers: [ Authors[0], Authors[1] ], //* by future implementation in DB this will be an array of IDs like [1, 2]
         eISSN: '2076-3417',
+        links: [
+            {
+                type: 'PDF',
+                url: 'https://riuma.uma.es/xmlui/static/pdf/politica-riuma_es.pdf'
+            }
+        ]
     },
     {
         id: 49,
@@ -30,6 +36,12 @@ export const Records: Record[] = [
         articleNumber: '1051',
         authorIdentifiers: [ Authors[2] ],
         eISSN: '2227-7390',
+        links: [
+            {
+                type: 'VIDEO',
+                url: 'https://www.youtube.com/watch?embeds_referring_euri=https%3A%2F%2Frpg.ifi.uzh.ch%2F&v=HGULBBAo5lA'
+            }
+        ]
     }, 
     {
         id: 48,

@@ -4,6 +4,14 @@ import { Books } from './Books';
 
 export const Records: Record[] = [
     {
+        id: 51,
+        title: 'lorem ',
+        authors: [ ' dfs' ],
+        source: 'werwer',
+        published: 'ENERO',
+        accessionNumber: '34345345'
+    },
+    {
         id: 50,
         title: 'Neuroplasticity-Based Pruning Method for Deep Convutional Neural Networks',
         authors: [ 'Camacho, Jose David', 'Villaseñor, Carlos', 'Lopez Franco, Carlos', 'Arana Daniel, Nancy' ],

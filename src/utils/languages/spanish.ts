@@ -18,6 +18,7 @@ export const spanish = {
             },
             cvCarlos: {
                 position: 'Profesor y Director del Laboratorio de Sistemas Inteligentes',
+                biography: 'Descripción en español',
                 sections: {
                     academicFormation: {
                         title: 'Formación Académica',

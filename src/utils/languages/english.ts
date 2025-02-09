@@ -5,7 +5,7 @@ export const english = {
             conference_papers: 'Conference Papers',
             people: 'People',
             description_pt1: 'Welcome to the website of the Intelligent Systems Laboratory. Group led by ',
-            descripcion_pt2: '. Our lab was founded in ... and is part of the Department of Informatics, at the University of Guadalajara.',
+            description_pt2: '. Our lab was founded in ... and is part of the Department of Informatics, at the University of Guadalajara.',
             staff: 'Staff',
             departments: {
                 computer_science: 'Department of Computer Science',
@@ -18,6 +18,7 @@ export const english = {
             },
             cvCarlos: {
                 position: 'Proffesor and Director of the Intelligent Systems Laboratory',
+                biography: 'Description in english',
                 sections: {
                     academicFormation: {
                         title: 'Academic Formation',

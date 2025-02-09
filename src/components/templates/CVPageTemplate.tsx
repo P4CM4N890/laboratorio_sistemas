@@ -5,9 +5,10 @@ import { PageTemplate } from './PageTemplate';
 
 interface Props {
     data: CV;
+    children?: any;
 }
 
-export const CVPageTemplate = ( { data } : Props ) => {
+export const CVPageTemplate = ( { data, children } : Props ) => {
 
     return (
         
@@ -19,6 +20,10 @@ export const CVPageTemplate = ( { data } : Props ) => {
                         <h1 className='text-2xl text-blue-800 pt-5' >{ data.name }</h1>
                         <h3 className='text-lg font-semibold' >{ data.position }</h3>
                     </section>
+
+                    {
+                        children
+                    }
 
                     <CVSections data={ data } />
 
